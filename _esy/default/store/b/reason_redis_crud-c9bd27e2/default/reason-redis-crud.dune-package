@@ -1,0 +1,31 @@
+(lang dune 2.9)
+(name reason-redis-crud)
+(library
+ (name reason-redis-crud.library)
+ (kind normal)
+ (orig_src_dir /Users/mando/Github/reason-redis-crud/library)
+ (archives
+  (byte library/ReasonRedisCrudLibrary.cma)
+  (native library/ReasonRedisCrudLibrary.cmxa))
+ (plugins
+  (byte library/ReasonRedisCrudLibrary.cma)
+  (native library/ReasonRedisCrudLibrary.cmxs))
+ (native_archives library/ReasonRedisCrudLibrary.a)
+ (main_module_name ReasonRedisCrudLibrary)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name ReasonRedisCrudLibrary)
+   (modules
+    ((name Util)
+     (obj_name reasonRedisCrudLibrary__Util)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name ReasonRedisCrudLibrary)
+    (obj_name reasonRedisCrudLibrary)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

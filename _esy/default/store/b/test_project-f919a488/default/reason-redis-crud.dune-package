@@ -1,0 +1,51 @@
+(lang dune 2.6)
+(name reason-redis-crud)
+(library
+ (name reason-redis-crud.bin.pesy-modules)
+ (kind normal)
+ (orig_src_dir /Users/mando/Github/reason-redis-crud/bin)
+ (archives
+  (byte bin/pesy-modules/ReasonRedisCrudBinPesyModules.cma)
+  (native bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxa))
+ (plugins
+  (byte bin/pesy-modules/ReasonRedisCrudBinPesyModules.cma)
+  (native bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxs))
+ (native_archives bin/pesy-modules/ReasonRedisCrudBinPesyModules.a)
+ (requires reason-redis-crud.library)
+ (main_module_name ReasonRedisCrudBinPesyModules)
+ (modes byte native)
+ (modules
+  (singleton
+   (name ReasonRedisCrudBinPesyModules)
+   (obj_name reasonRedisCrudBinPesyModules)
+   (visibility public)
+   (impl))))
+(library
+ (name reason-redis-crud.library)
+ (kind normal)
+ (orig_src_dir /Users/mando/Github/reason-redis-crud/library)
+ (archives
+  (byte library/ReasonRedisCrudLibrary.cma)
+  (native library/ReasonRedisCrudLibrary.cmxa))
+ (plugins
+  (byte library/ReasonRedisCrudLibrary.cma)
+  (native library/ReasonRedisCrudLibrary.cmxs))
+ (native_archives library/ReasonRedisCrudLibrary.a)
+ (main_module_name ReasonRedisCrudLibrary)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name ReasonRedisCrudLibrary)
+   (modules
+    ((name Util)
+     (obj_name reasonRedisCrudLibrary__Util)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name ReasonRedisCrudLibrary)
+    (obj_name reasonRedisCrudLibrary)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

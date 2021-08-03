@@ -1,0 +1,12 @@
+(executable (name ReasonRedisCrudApp)
+    (modules (:standard \ ReasonRedisCrudBinPesyModules))
+    (public_name ReasonRedisCrudApp)
+    (libraries reason-redis-crud.bin.pesy-modules)
+    (flags -open ReasonRedisCrudBinPesyModules))
+(library (public_name reason-redis-crud.bin.pesy-modules)
+    (name ReasonRedisCrudBinPesyModules)
+    (modules ReasonRedisCrudBinPesyModules)
+    (libraries reason-redis-crud.library))
+(rule
+    (with-stdout-to ReasonRedisCrudBinPesyModules.re
+        (run echo "module Library = ReasonRedisCrudLibrary;")))

@@ -1,0 +1,33 @@
+lib: [
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/META"
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/ReasonRedisCrudBinPesyModules.a" {"bin/pesy-modules/ReasonRedisCrudBinPesyModules.a"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/ReasonRedisCrudBinPesyModules.cma" {"bin/pesy-modules/ReasonRedisCrudBinPesyModules.cma"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxa" {"bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxa"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxs" {"bin/pesy-modules/ReasonRedisCrudBinPesyModules.cmxs"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/ReasonRedisCrudBinPesyModules.re" {"bin/pesy-modules/ReasonRedisCrudBinPesyModules.re"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/reasonRedisCrudBinPesyModules.cmi" {"bin/pesy-modules/reasonRedisCrudBinPesyModules.cmi"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/reasonRedisCrudBinPesyModules.cmt" {"bin/pesy-modules/reasonRedisCrudBinPesyModules.cmt"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/bin/pesy-modules/reasonRedisCrudBinPesyModules.cmx" {"bin/pesy-modules/reasonRedisCrudBinPesyModules.cmx"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/dune-package"
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/ReasonRedisCrudLibrary.a" {"library/ReasonRedisCrudLibrary.a"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/ReasonRedisCrudLibrary.cma" {"library/ReasonRedisCrudLibrary.cma"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/ReasonRedisCrudLibrary.cmxa" {"library/ReasonRedisCrudLibrary.cmxa"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/ReasonRedisCrudLibrary.cmxs" {"library/ReasonRedisCrudLibrary.cmxs"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/Util.re" {"library/Util.re"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/Util.rei" {"library/Util.rei"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary.cmi" {"library/reasonRedisCrudLibrary.cmi"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary.cmt" {"library/reasonRedisCrudLibrary.cmt"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary.cmx" {"library/reasonRedisCrudLibrary.cmx"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary.ml" {"library/reasonRedisCrudLibrary.ml"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary__Util.cmi" {"library/reasonRedisCrudLibrary__Util.cmi"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary__Util.cmt" {"library/reasonRedisCrudLibrary__Util.cmt"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary__Util.cmti" {"library/reasonRedisCrudLibrary__Util.cmti"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/library/reasonRedisCrudLibrary__Util.cmx" {"library/reasonRedisCrudLibrary__Util.cmx"}
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/reason-redis-crud/opam"
+]
+bin: [
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/bin/ReasonRedisCrudApp"
+]
+doc: [
+  "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/doc/reason-redis-crud/README.md"
+]

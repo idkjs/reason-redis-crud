@@ -1,0 +1,243 @@
+# dune build -p reason-redis-crud
+# OCAMLPARAM: unset
+# Workspace root: /Users/mando/Github/reason-redis-crud
+$ /usr/local/bin/nproc > /tmp/dune9cc0c3.output 2> /dev/null
+# Auto-detected concurrency: 8
+# disable binary cache
+$ /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -config > /tmp/dunec558d3.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/lib/ocaml"
+#  ; ocaml_bin =
+#      External
+#        "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default"
+#        ; "MANPATH" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.6.0-61a19332/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.6.2-4385a17b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.3.6-1ac1f80f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-abf487fe/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-1e57991d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-cc398097/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20200131-b7b7502d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20200624-4beeeb27/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-31963def/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-be4b394d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-edca2a37/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-151e97b9/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind_secondary-opam__c__1.8.1-46109b32/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-07520e3e/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.6.2-63446502/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-685eb370/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.1.0-4694870a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-a081266a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-0e01a0ce/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-cea7c845/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-eb99d460/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-f02e4530/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-c47845e4/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20200624-56d73b9e/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20200624-6158718a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.6-4f98cfa5/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-0c3e6de2/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_m4-opam__c__1-45a7fa38/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_secondary_compiler-opam__c__4.08.1-1-a283d276/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-f854d5ef/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-1c5fdf6f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.3-25afc035/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.0-55ea5b4a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-4517cf55/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-b6173265/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-b00db443/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-15764575/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.0-8cd1bb07/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.6.2-f6f7a439/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_private_libs-opam__c__2.6.2-7ce8b7bb/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.6.2-4385a17b/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.09.1"
+#      ; standard_library_default =
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/lib/ocaml"
+#      ; standard_library =
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = false
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.6.0"
+#      ; target = "x86_64-apple-darwin20.6.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = false
+#      ; exec_magic_number = "Caml1999X026"
+#      ; cmi_magic_number = "Caml1999I026"
+#      ; cmo_magic_number = "Caml1999O026"
+#      ; cma_magic_number = "Caml1999A026"
+#      ; cmx_magic_number = "Caml1999Y026"
+#      ; cmxa_magic_number = "Caml1999Z026"
+#      ; ast_impl_magic_number = "Caml1999M026"
+#      ; ast_intf_magic_number = "Caml1999N026"
+#      ; cmxs_magic_number = "Caml1999D026"
+#      ; cmt_magic_number = "Caml1999T026"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd bin && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocaml -I +compiler-libs /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/.dune/default/bin/dune.ml)
+$ (cd library && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocaml -I +compiler-libs /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/.dune/default/library/dune.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin && /bin/echo 'module Library = ReasonRedisCrudLibrary;') > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin/ReasonRedisCrudBinPesyModules.re
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I library/.ReasonRedisCrudLibrary.objs/byte -no-alias-deps -o library/.ReasonRedisCrudLibrary.objs/byte/reasonRedisCrudLibrary.cmo -c -impl library/reasonRedisCrudLibrary.ml-gen)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.6.0-61a19332/bin/refmt --print binary bin/ReasonRedisCrudBinPesyModules.re) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin/ReasonRedisCrudBinPesyModules.re.ml
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.6.0-61a19332/bin/refmt --print binary library/Util.rei) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/library/Util.rei.mli
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.6.0-61a19332/bin/refmt --print binary bin/ReasonRedisCrudApp.re) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin/ReasonRedisCrudApp.re.ml
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.6.0-61a19332/bin/refmt --print binary library/Util.re) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/library/Util.re.ml
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamldep.opt -modules -impl library/Util.re.ml) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/library/.ReasonRedisCrudLibrary.objs/Util.re.ml.d
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamldep.opt -modules -impl bin/ReasonRedisCrudApp.re.ml) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin/.ReasonRedisCrudApp.eobjs/ReasonRedisCrudApp.re.ml.d
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamldep.opt -modules -impl bin/ReasonRedisCrudBinPesyModules.re.ml) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/bin/.ReasonRedisCrudBinPesyModules.objs/ReasonRedisCrudBinPesyModules.re.ml.d
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamldep.opt -modules -intf library/Util.rei.mli) > /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/library/.ReasonRedisCrudLibrary.objs/Util.rei.mli.d
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -g -bin-annot -I library/.ReasonRedisCrudLibrary.objs/byte -no-alias-deps -open ReasonRedisCrudLibrary -o library/.ReasonRedisCrudLibrary.objs/byte/reasonRedisCrudLibrary__Util.cmi -c -intf library/Util.rei.mli)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -g -bin-annot -I bin/.ReasonRedisCrudBinPesyModules.objs/byte -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -no-alias-deps -o bin/.ReasonRedisCrudBinPesyModules.objs/byte/reasonRedisCrudBinPesyModules.cmo -c -impl bin/ReasonRedisCrudBinPesyModules.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -g -bin-annot -I library/.ReasonRedisCrudLibrary.objs/byte -intf-suffix .ml -no-alias-deps -open ReasonRedisCrudLibrary -o library/.ReasonRedisCrudLibrary.objs/byte/reasonRedisCrudLibrary__Util.cmo -c -impl library/Util.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -g -a -o bin/ReasonRedisCrudBinPesyModules.cma bin/.ReasonRedisCrudBinPesyModules.objs/byte/reasonRedisCrudBinPesyModules.cmo)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -w -40 -g -a -o library/ReasonRedisCrudLibrary.cma library/.ReasonRedisCrudLibrary.objs/byte/reasonRedisCrudLibrary.cmo library/.ReasonRedisCrudLibrary.objs/byte/reasonRedisCrudLibrary__Util.cmo)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -intf-suffix .ml-gen -no-alias-deps -o library/.ReasonRedisCrudLibrary.objs/native/reasonRedisCrudLibrary.cmx -c -impl library/reasonRedisCrudLibrary.ml-gen)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -intf-suffix .ml -no-alias-deps -open ReasonRedisCrudLibrary -o library/.ReasonRedisCrudLibrary.objs/native/reasonRedisCrudLibrary__Util.cmx -c -impl library/Util.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -a -o library/ReasonRedisCrudLibrary.cmxa library/.ReasonRedisCrudLibrary.objs/native/reasonRedisCrudLibrary.cmx library/.ReasonRedisCrudLibrary.objs/native/reasonRedisCrudLibrary__Util.cmx)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -I bin/.ReasonRedisCrudBinPesyModules.objs/byte -I bin/.ReasonRedisCrudBinPesyModules.objs/native -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -intf-suffix .ml -no-alias-deps -o bin/.ReasonRedisCrudBinPesyModules.objs/native/reasonRedisCrudBinPesyModules.cmx -c -impl bin/ReasonRedisCrudBinPesyModules.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -a -o bin/ReasonRedisCrudBinPesyModules.cmxa bin/.ReasonRedisCrudBinPesyModules.objs/native/reasonRedisCrudBinPesyModules.cmx)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlc.opt -open ReasonRedisCrudBinPesyModules -g -bin-annot -I bin/.ReasonRedisCrudApp.eobjs/byte -I bin/.ReasonRedisCrudBinPesyModules.objs/byte -I bin/.ReasonRedisCrudBinPesyModules.objs/native -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -no-alias-deps -o bin/.ReasonRedisCrudApp.eobjs/byte/reasonRedisCrudApp.cmo -c -impl bin/ReasonRedisCrudApp.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -shared -linkall -I library -o library/ReasonRedisCrudLibrary.cmxs library/ReasonRedisCrudLibrary.cmxa)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -open ReasonRedisCrudBinPesyModules -g -I bin/.ReasonRedisCrudApp.eobjs/byte -I bin/.ReasonRedisCrudApp.eobjs/native -I bin/.ReasonRedisCrudBinPesyModules.objs/byte -I bin/.ReasonRedisCrudBinPesyModules.objs/native -I library/.ReasonRedisCrudLibrary.objs/byte -I library/.ReasonRedisCrudLibrary.objs/native -intf-suffix .ml -no-alias-deps -o bin/.ReasonRedisCrudApp.eobjs/native/reasonRedisCrudApp.cmx -c -impl bin/ReasonRedisCrudApp.re.ml)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -w -40 -g -shared -linkall -I bin -o bin/ReasonRedisCrudBinPesyModules.cmxs bin/ReasonRedisCrudBinPesyModules.cmxa)
+$ (cd /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.9.1000-c0c8387c/bin/ocamlopt.opt -open ReasonRedisCrudBinPesyModules -g -o bin/ReasonRedisCrudApp.exe library/ReasonRedisCrudLibrary.cmxa bin/ReasonRedisCrudBinPesyModules.cmxa bin/.ReasonRedisCrudApp.eobjs/native/reasonRedisCrudApp.cmx)

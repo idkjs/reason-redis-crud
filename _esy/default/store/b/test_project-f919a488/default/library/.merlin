@@ -1,0 +1,4 @@
+EXCLUDE_QUERY_DIR
+B /Users/mando/Github/reason-redis-crud/_esy/default/store/b/test_project-f919a488/default/library/.ReasonRedisCrudLibrary.objs/byte
+S .
+FLG -open ReasonRedisCrudLibrary -w -40

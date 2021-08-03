@@ -1,0 +1,2 @@
+(** @canonical ReasonRedisCrudLibrary.Util *)
+module Util = ReasonRedisCrudLibrary__Util

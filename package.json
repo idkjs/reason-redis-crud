@@ -1,0 +1,50 @@
+{
+  "name": "reason-redis-crud",
+  "version": "0.1.0",
+  "description": "Starter Reason Project",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "buildDev": "pesy build",
+    "release": {
+      "rewritePrefix": true,
+      "releasedBinaries": [ "ReasonRedisCrudApp" ]
+    }
+  },
+  "pesy": {
+    "azure-project": "esy-dev/esy",
+    "github": "esy/pesy-reason-template"
+  },
+  "buildDirs": {
+    "library": {},
+    "bin": {
+      "imports": [ "Library = require('reason-redis-crud/library')" ],
+      "bin": { "ReasonRedisCrudApp": "ReasonRedisCrudApp.re" }
+    }
+  },
+  "scripts": { "start": "esy x ReasonRedisCrudApp" },
+  "dependencies": {
+    "@esy-ocaml/reason": "^3.7.0",
+    "@opam/base": "v0.14.1",
+    "@opam/cohttp": "4.0.0",
+    "@opam/cohttp-lwt-unix": "4.0.0",
+    "@opam/dune": "2.9.0",
+    "@opam/httpaf": "0.7.1",
+    "@opam/httpaf-lwt-unix": "0.7.1",
+    "@opam/lwt": "5.4.1",
+    "@opam/lwt_ppx": "2.0.2",
+    "@opam/opium": "0.20.0",
+    "@opam/redis": "0.5",
+    "@opam/redis-lwt": "0.5",
+    "@opam/stdio": "v0.14.0",
+    "@pesy/esy-pesy": "0.1.0-alpha.11",
+    "@reason-native/console": "^0.1.0",
+    "@reason-native/pastel": "^0.3.0",
+    "@reason-native/rely": "^3.2.1",
+    "ocaml": "~4.10.x"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "@opam/ocaml-lsp-server": "*",
+    "refmterr": "*"
+  }
+}

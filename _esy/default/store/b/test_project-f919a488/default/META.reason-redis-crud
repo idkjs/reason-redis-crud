@@ -1,0 +1,21 @@
+package "bin" (
+  directory = "bin"
+  package "pesy-modules" (
+    directory = "pesy-modules"
+    description = ""
+    requires = "reason-redis-crud.library"
+    archive(byte) = "ReasonRedisCrudBinPesyModules.cma"
+    archive(native) = "ReasonRedisCrudBinPesyModules.cmxa"
+    plugin(byte) = "ReasonRedisCrudBinPesyModules.cma"
+    plugin(native) = "ReasonRedisCrudBinPesyModules.cmxs"
+  )
+)
+package "library" (
+  directory = "library"
+  description = ""
+  requires = ""
+  archive(byte) = "ReasonRedisCrudLibrary.cma"
+  archive(native) = "ReasonRedisCrudLibrary.cmxa"
+  plugin(byte) = "ReasonRedisCrudLibrary.cma"
+  plugin(native) = "ReasonRedisCrudLibrary.cmxs"
+)

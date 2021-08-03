@@ -1,0 +1,1090 @@
+#!/bin/bash
+# Command environment
+
+#
+# Built-in
+#
+export ESY__ROOT_PACKAGE_CONFIG_PATH="/Users/mando/Github/reason-redis-crud/package.json"
+export GIT_ASKPASS='/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+export NIX_PROFILES='/nix/var/nix/profiles/default /Users/mando/.nix-profile'
+export XDG_CACHE_HOME='/Users/mando/Library/Caches'
+export CAML_LD_LIBRARY_PATH='/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/stublibs:/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/lib/stublibs:/Users/mando/.opam/4.12.0/lib/stublibs:/Users/mando/.opam/4.12.0/lib/ocaml/stublibs:/Users/mando/.opam/4.12.0/lib/ocaml'
+export FORGIT_LOG_GRAPH_ENABLE='1'
+export PKG_CONFIG_PATH='/Users/mando/.opam/4.12.0/lib/pkgconfig'
+export LOGNAME='mando'
+export SHLVL='3'
+export PAGER='less'
+export VSCODE_GIT_ASKPASS_MAIN='/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+export FNM_MULTISHELL_PATH='/var/folders/jk/x59dhv6s7151k4mfmshf6v480000gn/T/fnm_multishells/645_1628002618621'
+export _='/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/bin/esy'
+export OPAM_SWITCH_PREFIX='/Users/mando/.opam/4.12.0'
+export __CFBundleIdentifier='com.googlecode.iterm2'
+export FZF_CTRL_T_COMMAND='fd --hidden --follow --exclude .git'
+export COLORFGBG='7;0'
+export HOME='/Users/mando'
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export PSQL_EDITOR='nvim'
+export FNM_NODE_DIST_MIRROR='https://nodejs.org/dist'
+export VSCODE_GIT_ASKPASS_NODE='/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)'
+export LC_CTYPE='UTF-8'
+export __CF_USER_TEXT_ENCODING='0x1F5:0x0:0x0'
+export FNM_DIR='/Users/mando/.fnm'
+export GEM_HOME='/Users/mando/.gem/ruby/3.0.1'
+export TERM_PROGRAM_VERSION='1.58.2'
+export SHELL='fish'
+export PWD='/Users/mando/Github/reason-redis-crud'
+export CHRUBY_FISH_VERSION='0.8.2'
+export SSH_AUTH_SOCK='/private/tmp/com.apple.launchd.ue5GvR3h45/Listeners'
+export VSCODE_GIT_IPC_HANDLE='/var/folders/jk/x59dhv6s7151k4mfmshf6v480000gn/T/vscode-git-5f7baa6f5e.sock'
+export TERM_PROGRAM='vscode'
+export _tide_right_prompt_display_var='_tide_right_prompt_display_644'
+export RUBIES='/Users/mando/.rubies/ruby-2.7.2 /Users/mando/.rubies/ruby-3.0.1'
+export FNM_ARCH='x64'
+export XDG_CONFIG_HOME='/Users/mando/.config/'
+export RUBOCOP_DAEMON_USE_BUNDLER='true'
+export USER='mando'
+export LESS='-F -g -i -M -R -S -w -X -z-4'
+export PATH='/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/mando/.gem/ruby/3.0.1/bin:/Users/mando/.rubies/ruby-3.0.1/lib/ruby/gems/3.0.0/bin:/Users/mando/.rubies/ruby-3.0.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/bin/rubocop-daemon-wrapper:/Users/mando/.opam/4.12.0/bin:/Users/mando/.opam/default/bin:/Users/mando/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/var/folders/jk/x59dhv6s7151k4mfmshf6v480000gn/T/fnm_multishells/645_1628002618621/bin:/Users/mando/.local/bin:/Users/mando/.cargo/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/var/folders/jk/x59dhv6s7151k4mfmshf6v480000gn/T/fnm_multishells/44127_1627995364730/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+export OCAMLPATH='/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/lib:'
+export HOMEBREW_NO_AUTO_UPDATE='1'
+export RUBY_VERSION='3.0.1'
+export LC_TERMINAL='iTerm2'
+export XPC_FLAGS='0x0'
+export FZF_DEFAULT_OPTS='--no-hscroll --ansi --no-mouse --height 40% --layout=reverse --margin=0 --info=inline --preview-window=:noborder'
+export MAN_PATH='/usr/local/lib/node_modules/@esy-nightly/esy/3/i/esy-30146d5d/man:'
+export RUBY_ENGINE='ruby'
+export FD_OPTIONS='--hidden --follow --exclude .git'
+export LANG='en_US.UTF-8'
+export ITERM_PROFILE='Default'
+export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --follow --exclude .git'
+export VISUAL='code --wait'
+export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+export OCAML_TOPLEVEL_PATH='/Users/mando/.opam/4.12.0/lib/toplevel'
+export COMMAND_MODE='unix2003'
+export EDITOR='nvim'
+export NIX_SSL_CERT_FILE='/nix/var/nix/profiles/default/etc/ssl/certs/ca-bundle.crt'
+export COLORTERM='truecolor'
+export GEM_ROOT='/Users/mando/.rubies/ruby-3.0.1/lib/ruby/gems/3.0.0'
+export LC_TERMINAL_VERSION='3.4.8'
+export ORIGINAL_XDG_CURRENT_DESKTOP='undefined'
+export CHRUBY_VERSION='0.3.9'
+export VISUAL_EDITOR='code'
+export ITERM_SESSION_ID='w0t0p0:9F3434E4-1168-4BF6-9B78-23728B6CBC57'
+export RUBY_ROOT='/Users/mando/.rubies/ruby-3.0.1'
+export FNM_LOGLEVEL='info'
+export PYENV_ROOT='/Users/mando/.pyenv'
+export TERM_SESSION_ID='w0t0p0:9F3434E4-1168-4BF6-9B78-23728B6CBC57'
+export TERM='xterm-256color'
+export GEM_PATH='/Users/mando/.gem/ruby/3.0.1:/Users/mando/.rubies/ruby-3.0.1/lib/ruby/gems/3.0.0'
+export APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL='true'
+export TMPDIR='/var/folders/jk/x59dhv6s7151k4mfmshf6v480000gn/T/'
+export XPC_SERVICE_NAME='0'
+export SHELL='fish'
+export PATH="/Users/mando/Github/reason-redis-crud/_esy/default/bin:$PATH"
+export cur__etc="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/etc"
+export cur__share="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/share"
+export cur__toplevel="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/toplevel"
+export cur__stublibs="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/stublibs"
+export cur__doc="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/doc"
+export cur__man="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/man"
+export cur__lib="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/lib"
+export cur__sbin="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/sbin"
+export cur__bin="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/bin"
+export cur__install="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2"
+export cur__target_dir="/Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2"
+export cur__original_root="/Users/mando/Github/reason-redis-crud"
+export cur__root="/Users/mando/Github/reason-redis-crud"
+export cur__dev="true"
+export cur__version="0.1.0"
+export cur__name="reason-redis-crud"
+
+#
+# esy-gmp@archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2@d3dc108f
+#
+export CPATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/include:$CPATH"
+export CPPFLAGS="-I/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/include"
+export LDFLAGS="-L/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib -lgmp"
+export LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib:$LD_LIBRARY_PATH"
+export LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib:$LIBRARY_PATH"
+export PKG_CONFIG_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib/pkgconfig:$PKG_CONFIG_PATH"
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/bin:$PATH"
+
+#
+# @opam/conf-gmp@opam:3@a623586f
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/bin:$PATH"
+
+#
+# @opam/duration@opam:0.1.3@90245962
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/bin:$PATH"
+
+#
+# @opam/mirage-no-xen@opam:1@0d45465b
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/bin:$PATH"
+
+#
+# @opam/mirage-no-solo5@opam:1@84049e1f
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/bin:$PATH"
+
+#
+# @opam/conf-gmp-powm-sec@opam:3@b66b4239
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/bin:$PATH"
+
+#
+# @opam/zarith@opam:1.12@232cc7f2
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__zarith-opam__c__1.12-80a1b765/lib/zarith:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__zarith-opam__c__1.12-80a1b765/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__zarith-opam__c__1.12-80a1b765/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__zarith-opam__c__1.12-80a1b765/bin:$PATH"
+
+#
+# @opam/pbkdf@opam:1.1.0@9a7404c9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/bin:$PATH"
+
+#
+# @opam/mirage-crypto-rng@opam:0.10.3@64ff50ec
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/bin:$PATH"
+
+#
+# @opam/mirage-crypto-pk@opam:0.10.3@8109ddfe
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/bin:$PATH"
+
+#
+# @opam/mirage-crypto-ec@opam:0.10.3@321b3976
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/bin:$PATH"
+
+#
+# @opam/gmap@opam:0.3.0@5c009abd
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/bin:$PATH"
+
+#
+# @opam/asn1-combinators@opam:0.2.5@92ddb0c7
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/bin:$PATH"
+
+#
+# yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9
+#
+export PATH=":$PATH"
+export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pkgconfig:/usr/local/share/pkgconfig:$cur__lib:$PKG_CONFIG_PATH"
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/bin:$PATH"
+
+#
+# @opam/macaddr@opam:5.1.0@219e190c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/bin:$PATH"
+
+#
+# @opam/domain-name@opam:0.3.0@46ccc517
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/bin:$PATH"
+
+#
+# @opam/x509@opam:0.14.0@17ea7e88
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/bin:$PATH"
+
+#
+# @opam/rresult@opam:0.6.0@4b185e72
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/bin:$PATH"
+
+#
+# @opam/fpath@opam:0.7.3@674d8125
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/bin:$PATH"
+
+#
+# @opam/bos@opam:0.2.0@8000d437
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/bin:$PATH"
+
+#
+# @opam/atdgen-runtime@opam:2.2.1@c520dbfc
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/bin:$PATH"
+
+#
+# @opam/atd@opam:2.2.1@5cc6d2c6
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/bin:$PATH"
+
+#
+# @opam/parsexp@opam:v0.14.1@f61276df
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/bin:$PATH"
+
+#
+# @opam/num@opam:1.4@a5195c8d
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.4-b0099859/lib/num:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.4-b0099859/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.4-b0099859/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.4-b0099859/bin:$PATH"
+
+#
+# @opam/hmap@opam:0.8.1@87a77ebe
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/bin:$PATH"
+
+#
+# @opam/eqaf@opam:0.7@5e2a7277
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/bin:$PATH"
+
+#
+# @opam/cstruct@opam:6.0.1@69eae449
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/bin:$PATH"
+
+#
+# @opam/easy-format@opam:1.3.2@1ea9f987
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/bin:$PATH"
+
+#
+# @opam/biniou@opam:1.2.1@420bda02
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/bin:$PATH"
+
+#
+# @opam/ocaml-migrate-parsetree@opam:2.2.0@d1434b92
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/bin:$PATH"
+
+#
+# @opam/ocaml-compiler-libs@opam:v0.12.3@316a19dc
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/bin:$PATH"
+
+#
+# @opam/faraday-lwt@opam:0.8.1@5a6331d0
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/bin:$PATH"
+
+#
+# @opam/conf-pkg-config@opam:2@85f8644d
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/bin:$PATH"
+
+#
+# @opam/bigarray-compat@opam:1.0.0@951830c6
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/bin:$PATH"
+
+#
+# @opam/ipaddr-sexp@opam:5.1.0@9061c237
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/bin:$PATH"
+
+#
+# @opam/ipaddr@opam:5.1.0@52ffd04c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/bin:$PATH"
+
+#
+# @opam/ca-certs@opam:0.2.1@8147cb95
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/bin:$PATH"
+
+#
+# @opam/conduit@opam:4.0.0@24b13f45
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/bin:$PATH"
+
+#
+# @opam/base-bytes@opam:base@19d0c2ff
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/bin:$PATH"
+
+#
+# @opam/uutf@opam:1.0.2@4440868f
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/bin:$PATH"
+
+#
+# @opam/uchar@opam:0.0.2@c8218eea
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/bin:$PATH"
+
+#
+# @opam/topkg@opam:1.0.3@e4e10f1c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/bin:$PATH"
+
+#
+# @opam/ocamlbuild@opam:0.14.0@6ac75d03
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/bin:$PATH"
+
+#
+# @opam/menhirSdk@opam:20210419@9c7661a4
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/bin:$PATH"
+
+#
+# @opam/menhirLib@opam:20210419@0b3db8d0
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/bin:$PATH"
+
+#
+# @opam/atdgen@opam:2.2.1@6ace3080
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/bin:$PATH"
+
+#
+# @reason-native/file-context-printer@0.0.3@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/bin:$PATH"
+
+#
+# @reason-native/cli@0.0.1-alpha@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/bin:$PATH"
+
+#
+# @opam/junit@opam:2.0.2@f4bd0016
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/bin:$PATH"
+
+#
+# @opam/sexplib@opam:v0.14.0@61ef150a
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/bin:$PATH"
+
+#
+# @opam/uuidm@opam:0.9.7@bf725775
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/bin:$PATH"
+
+#
+# @opam/tyxml@opam:4.5.0@4676c9e9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/bin:$PATH"
+
+#
+# @opam/rock@opam:0.20.0@80110aed
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/bin:$PATH"
+
+#
+# @opam/ptime@opam:0.8.5@0051d642
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/bin:$PATH"
+
+#
+# @opam/multipart-form-data@opam:0.3.0@375eb487
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/bin:$PATH"
+
+#
+# @opam/mtime@opam:1.2.0@acd670b8
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/bin:$PATH"
+
+#
+# @opam/mirage-crypto@opam:0.10.3@8d7e3bbf
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/bin:$PATH"
+
+#
+# @opam/astring@opam:0.8.5@1300cee8
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/bin:$PATH"
+
+#
+# @opam/stdlib-shims@opam:0.3.0@0d088929
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/bin:$PATH"
+
+#
+# @opam/ppx_yojson_conv_lib@opam:v0.14.0@605a6997
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/bin:$PATH"
+
+#
+# @opam/dune-build-info@opam:2.9.0@c10d566f
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/bin:$PATH"
+
+#
+# @opam/yojson@opam:1.7.0@69d87312
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/bin:$PATH"
+
+#
+# @opam/dot-merlin-reader@opam:4.1@84436e1c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/bin:$PATH"
+
+#
+# @opam/csexp@opam:1.5.1@8a8fb3a7
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/bin:$PATH"
+
+#
+# @opam/ppxlib@opam:0.22.2@61009929
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/bin:$PATH"
+
+#
+# @opam/seq@opam:base@d8d7de1d
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/bin:$PATH"
+
+#
+# @opam/ocplib-endian@opam:1.1@84c1ca88
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/bin:$PATH"
+
+#
+# @opam/ocaml-syntax-shims@opam:1.0.0@9f361fbb
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/bin:$PATH"
+
+#
+# @opam/mmap@opam:1.1.0@b85334ff
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/bin:$PATH"
+
+#
+# @opam/cppo@opam:1.6.7@57a6d52c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/bin:$PATH"
+
+#
+# @opam/conf-libev@opam:4-12@955376fa
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/bin:$PATH"
+
+#
+# @opam/faraday-lwt-unix@opam:0.8.1@e733b134
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/bin:$PATH"
+
+#
+# @opam/faraday@opam:0.8.1@3e04a493
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/bin:$PATH"
+
+#
+# @opam/bigstringaf@opam:0.8.0@6a362afb
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/bin:$PATH"
+
+#
+# @opam/angstrom@opam:0.15.0@105656d9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/bin:$PATH"
+
+#
+# @opam/base-threads@opam:base@36803084
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/bin:$PATH"
+
+#
+# @opam/magic-mime@opam:1.2.0@6a509c98
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/bin:$PATH"
+
+#
+# @opam/logs@opam:0.7.0@1d03143e
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/bin:$PATH"
+
+#
+# @opam/fmt@opam:0.8.9@e0843a5b
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/bin:$PATH"
+
+#
+# @opam/conduit-lwt-unix@opam:4.0.0@e2583f1e
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/bin:$PATH"
+
+#
+# @opam/conduit-lwt@opam:4.0.0@b9a6a4bc
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/bin:$PATH"
+
+#
+# @opam/cohttp-lwt@opam:4.0.0@320b1f59
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/bin:$PATH"
+
+#
+# @opam/cmdliner@opam:1.0.4@93208aac
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/bin:$PATH"
+
+#
+# @opam/base-unix@opam:base@87d0b2eb
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/bin:$PATH"
+
+#
+# @opam/uri-sexp@opam:4.2.0@a6664f29
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/bin:$PATH"
+
+#
+# @opam/uri@opam:4.2.0@9c45eeb8
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/bin:$PATH"
+
+#
+# @opam/stringext@opam:1.6.0@d9079793
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/bin:$PATH"
+
+#
+# @opam/re@opam:1.9.0@9373f267
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/bin:$PATH"
+
+#
+# @opam/ppx_sexp_conv@opam:v0.14.3@8f42b1ac
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/bin:$PATH"
+
+#
+# @opam/jsonm@opam:1.0.1@ad3e76f5
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/bin:$PATH"
+
+#
+# @opam/base64@opam:3.5.0@827395e3
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/bin:$PATH"
+
+#
+# @opam/sexplib0@opam:v0.14.0@155c136c
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/bin:$PATH"
+
+#
+# @opam/dune-configurator@opam:2.9.0@40e837e7
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/bin:$PATH"
+
+#
+# @esy-ocaml/substs@0.0.1@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/bin:$PATH"
+
+#
+# @opam/result@opam:1.5@1c6a6533
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/bin:$PATH"
+
+#
+# @opam/ppx_derivers@opam:1.2.1@ecf0aa45
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/bin:$PATH"
+
+#
+# @opam/ocamlfind@opam:1.9.1@b748edf6
+#
+export OCAML_TOPLEVEL_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/toplevel"
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/bin:$PATH"
+
+#
+# @opam/merlin-extend@opam:0.6@88755c91
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/bin:$PATH"
+
+#
+# @opam/menhir@opam:20210419@11c42419
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/bin:$PATH"
+
+#
+# @opam/fix@opam:20201120@0b212fb9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/bin:$PATH"
+
+#
+# refmterr@3.3.2@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/bin:$PATH"
+
+#
+# ocaml@4.10.2000@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml:$CAML_LD_LIBRARY_PATH"
+export OCAMLLIB="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+export OCAML_TOPLEVEL_PATH="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin:$PATH"
+
+#
+# @reason-native/rely@3.2.1@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/bin:$PATH"
+
+#
+# @reason-native/pastel@0.3.0@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/bin:$PATH"
+
+#
+# @reason-native/console@0.1.0@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/bin:$PATH"
+
+#
+# @pesy/esy-pesy@0.1.0-alpha.11@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/bin:$PATH"
+
+#
+# @opam/stdio@opam:v0.14.0@a5affb43
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/bin:$PATH"
+
+#
+# @opam/redis-lwt@opam:0.5@0a1e04d5
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/bin:$PATH"
+
+#
+# @opam/redis@opam:0.5@a1b3e1c6
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/bin:$PATH"
+
+#
+# @opam/opium@opam:0.20.0@b41cb0ca
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/bin:$PATH"
+
+#
+# @opam/ocaml-lsp-server@opam:1.4.1@cd85c376
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/bin:$PATH"
+
+#
+# @opam/merlin@opam:3.6.1@b2fb327d
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/bin:$PATH"
+
+#
+# @opam/lwt_ppx@opam:2.0.2@d18729de
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/bin:$PATH"
+
+#
+# @opam/lwt@opam:5.4.1@37ffbe37
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/bin:$PATH"
+
+#
+# @opam/httpaf-lwt-unix@opam:0.7.1@7989947a
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/bin:$PATH"
+
+#
+# @opam/httpaf@opam:0.7.1@787eb3e3
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/bin:$PATH"
+
+#
+# @opam/dune@opam:2.9.0@489e77a9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/bin:$PATH"
+
+#
+# @opam/cohttp-lwt-unix@opam:4.0.0@44a340bb
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/bin:$PATH"
+
+#
+# @opam/cohttp@opam:4.0.0@6ec2ddbb
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/bin:$PATH"
+
+#
+# @opam/base@opam:v0.14.1@9b424fee
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/bin:$PATH"
+
+#
+# @esy-ocaml/reason@3.7.0@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/stublibs:/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/lib:$OCAMLPATH"
+export MAN_PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/man:$MAN_PATH"
+export PATH="/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/bin:$PATH"
+
+#
+# Built-in
+#
+export OCAMLFIND_LDCONF="ignore"
+export OCAMLFIND_DESTDIR="/Users/mando/Github/reason-redis-crud/_esy/default/store/i/reason_redis_crud-c9bd27e2/lib"
+export DUNE_BUILD_DIR="/Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2"
+export DUNE_STORE_ORIG_SOURCE_DIR="true"
+export SHELL="env -i /bin/bash --norc --noprofile"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export SHELL="fish"
+exec "$@"

@@ -1,0 +1,4 @@
+(executable
+ (name ReasonRedisCrudApp)
+ (public_name ReasonRedisCrudApp)
+ (libraries opium redis redis-lwt lwt lwt.unix))

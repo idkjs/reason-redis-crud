@@ -1,0 +1,379 @@
+# dune build -p reason-redis-crud
+# OCAMLPARAM: unset
+# Workspace root: /Users/mando/Github/reason-redis-crud
+$ /usr/local/bin/nproc > /tmp/dune757b4c.output 2> /dev/null
+# Auto-detected concurrency: 8
+# disable binary cache
+$ /Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/bin/ocamlfind printconf path > /tmp/dunecf6ad8.output
+$ /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocamlc.opt -config > /tmp/dunec707bd.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+#  ; ocaml_bin =
+#      External
+#        "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/mando/Github/reason-redis-crud"
+#        ; "INSIDE_DUNE" :
+#            "/Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2/default"
+#        ; "MANPATH" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/mando/Github/reason-redis-crud//Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__reason-3.7.0-885da9ff/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base-opam__c__v0.14.1-d894f331/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp-opam__c__4.0.0-fd57dc47/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt_unix-opam__c__4.0.0-4dc359cd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune-opam__c__2.9.0-3fbb46a7/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf-opam__c__0.7.1-9714b1ba/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__httpaf_lwt_unix-opam__c__0.7.1-97a0fd6b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt-opam__c__5.4.1-f91db2ac/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__lwt__ppx-opam__c__2.0.2-35f821b9/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin-opam__c__3.6.1-766cd212/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.4.1-295c11e1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__opium-opam__c__0.20.0-a7b973af/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis-opam__c__0.5-1dab4c86/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__redis_lwt-opam__c__0.5-0360b2ab/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-523a113f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/pesy__s__esy_pesy-0.1.0-alpha.11-ea71bb73/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__console-0.1.0-de0cecaa/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__pastel-0.3.0-0c607bd4/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__rely-3.2.1-61938d8b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/refmterr-3.3.2-4f3323c8/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fix-opam__c__20201120-57aae504/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhir-opam__c__20210419-fd0db096/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-82abbb6f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-efca758f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__result-opam__c__1.5-c5b8f456/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_configurator-opam__c__2.9.0-070488af/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-ed6ee579/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base64-opam__c__3.5.0-e56f77ad/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__jsonm-opam__c__1.0.1-8160b962/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__sexp__conv-opam__c__v0.14.3-0e6f50aa/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__re-opam__c__1.9.0-d174711e/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stringext-opam__c__1.6.0-da48ca1f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri-opam__c__4.2.0-5253765d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uri_sexp-opam__c__4.2.0-72d2194a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-e6e24802/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cohttp_lwt-opam__c__4.0.0-f6d4c539/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt-opam__c__4.0.0-a2fac855/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit_lwt_unix-opam__c__4.0.0-d63b6773/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fmt-opam__c__0.8.9-1e341c19/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__logs-opam__c__0.7.0-b7a7be6b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__magic_mime-opam__c__1.2.0-d7571fe1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__angstrom-opam__c__0.15.0-58f9ce47/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigstringaf-opam__c__0.8.0-7c39af1b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday-opam__c__0.8.1-ca048b83/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt_unix-opam__c__0.8.1-d206c814/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_libev-opam__c__4-12-c64568fa/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cppo-opam__c__1.6.7-b102fd09/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mmap-opam__c__1.1.0-02c6f5fb/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_syntax_shims-opam__c__1.0.0-a30424dd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocplib_endian-opam__c__1.1-d2a90d0c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__seq-opam__c__base-98a8865d/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppxlib-opam__c__0.22.2-82d9eb9b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-b466f786/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__4.1-cbf90045/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-f7909764/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__dune_build_info-opam__c__2.9.0-1f647bb2/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-b9ee8fee/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.3.0-5335409f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__astring-opam__c__0.8.5-02878153/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto-opam__c__0.10.3-69ef4299/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mtime-opam__c__1.2.0-196af057/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__multipart_form_data-opam__c__0.3.0-a9580064/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-233e6f7a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rock-opam__c__0.20.0-f63a39d4/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__tyxml-opam__c__4.5.0-f7a96490/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uuidm-opam__c__0.9.7-53d7c4db/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__sexplib-opam__c__v0.14.0-7f3854bc/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__junit-opam__c__2.0.2-807d66dc/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-6cc9ffb1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-b025d8bc/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen-opam__c__2.2.1-5cf0a0fd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirlib-opam__c__20210419-471a3bcb/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__menhirsdk-opam__c__20210419-013b565c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-daf7bbfd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-32f7e9c6/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-3eca9559/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-21f5186f/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__base_bytes-opam__c__base-6b8372fe/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conduit-opam__c__4.0.0-6e32b4c5/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ca_certs-opam__c__0.2.1-0cc5a9d1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr-opam__c__5.1.0-4be1a259/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ipaddr_sexp-opam__c__5.1.0-9b3ac559/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bigarray_compat-opam__c__1.0.0-85f738bd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_pkg_config-opam__c__2-583f8de9/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__faraday_lwt-opam__c__0.8.1-434de8ae/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-9df78fcc/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__2.2.0-cc122b10/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-0d2864e1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-514298cb/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__cstruct-opam__c__6.0.1-20fd8325/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__eqaf-opam__c__0.7-d4512fe2/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__hmap-opam__c__0.8.1-b98564d1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__num-opam__c__1.4-b0099859/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__parsexp-opam__c__v0.14.1-008e3c97/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atd-opam__c__2.2.1-3c67d012/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__atdgen_runtime-opam__c__2.2.1-ed965051/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__bos-opam__c__0.2.0-46293b8e/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-6bc83220/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__rresult-opam__c__0.6.0-f8b4e341/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__x509-opam__c__0.14.0-faf7919b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__domain_name-opam__c__0.3.0-21b724f4/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__macaddr-opam__c__5.1.0-972b0694/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/yarn_pkg_config-df6cabe1/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__asn1_combinators-opam__c__0.2.5-cab5ff86/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__gmap-opam__c__0.3.0-e8b17f86/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_ec-opam__c__0.10.3-7edbfe02/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_pk-opam__c__0.10.3-91ba3f38/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_crypto_rng-opam__c__0.10.3-51d3f92a/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__pbkdf-opam__c__1.1.0-e5c5a809/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__zarith-opam__c__1.12-80a1b765/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp_powm_sec-opam__c__3-e2e12b66/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_solo5-opam__c__1-84b0582e/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__mirage_no_xen-opam__c__1-ea1d894b/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__duration-opam__c__0.1.3-0b3f1289/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__conf_gmp-opam__c__3-67a2d9dd/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/esy_gmp-0cddf55c/lib"
+#      ; External
+#          "/Users/mando/.esy/3__________________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.1-925a260f/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.10.2"
+#      ; standard_library_default =
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+#      ; standard_library =
+#          "/Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.6.0"
+#      ; target = "x86_64-apple-darwin20.6.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X027"
+#      ; cmi_magic_number = "Caml1999I027"
+#      ; cmo_magic_number = "Caml1999O027"
+#      ; cma_magic_number = "Caml1999A027"
+#      ; cmx_magic_number = "Caml1999Y027"
+#      ; cmxa_magic_number = "Caml1999Z027"
+#      ; ast_impl_magic_number = "Caml1999M027"
+#      ; ast_intf_magic_number = "Caml1999N027"
+#      ; cmxs_magic_number = "Caml1999D027"
+#      ; cmt_magic_number = "Caml1999T027"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd library && /Users/mando/.esy/3__________________________________________________________________/i/ocaml-4.10.2000-302fdf3c/bin/ocaml -I +compiler-libs /Users/mando/Github/reason-redis-crud/_esy/default/store/b/reason_redis_crud-c9bd27e2/.dune/default/library/dune.ml)
